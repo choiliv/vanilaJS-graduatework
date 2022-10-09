@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@500&family=Dosis:wght@500&family=Gaegu:wght@400;700&family=Jua&family=Nanum+Gothic+Coding:wght@700&family=Nanum+Gothic:wght@700&family=Nanum+Pen+Script&family=Passions+Conflict&family=Patrick+Hand&family=Quicksand&family=Shadows+Into+Light&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@500&family=Dosis:wght@200;500&family=Gaegu:wght@400;700&family=Jua&family=Nanum+Gothic+Coding:wght@700&family=Nanum+Gothic:wght@700&family=Nanum+Pen+Script&family=Passions+Conflict&family=Patrick+Hand&family=Quicksand&family=Shadows+Into+Light&family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Dancing+Script:wght@500&family=Dosis:wght@200;500&family=Gaegu:wght@400;700&family=Jua&family=Nanum+Gothic+Coding:wght@700&family=Nanum+Gothic:wght@700&family=Nanum+Pen+Script&family=Passions+Conflict&family=Patrick+Hand&family=Quicksand&family=Shadows+Into+Light&family=Ubuntu:wght@700&display=swap');
+@font-face {
+    font-family: 'Fairytale_ddobak';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_03@1.0/Fairytale_ddobak.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Shining_star';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_10@1.0/Shining_star.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-size: 70% 100%;
+    background-position: right;
+    background-position-y:30%;
+    background-color: rgb(14, 32, 81);
+    margin: 0;
+    padding: 10px;
+    animation: fadein 4s ease-in-out;
+    font-family: 'Dosis', sans-serif;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+#weather, #clock, #music-icon>i {
+    color: white;
+}
+
+#clock {
+    position:fixed;
+    left: 48%;
+    margin-left: -10px;
+}
+
+#music-icon {
+    border: 1px solid white;
+    border-radius: 15px;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#hi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+h2:first-child {
+    color:white;
+}
+
+h2:last-child {
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Fairytale_ddobak';
+}
+
+#login {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login-form input,
+#todo-form input {
+     border: none;
+     outline:none;
+     font-size: 20px;
+     background: none;
+}
+
+#login-form {
+    margin-left: 30px;
+}
+
+#todo-form input {
+    font-size: 15px;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+#todo-form input::placeholder {
+    color: white;
+    font-family: 'Shining_star';
+    font-size: 30px;
+}
+
+ul {
+    margin-top: 100px;
+    margin-left: -15px;
+}
+
+li {
+    color: white;
+    list-style: none;
+    width: 250px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: 'Shining_star';
+    font-size: 20px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    margin-right: 10px;
+}
+
+
+#quotes {
+   position: fixed;
+   bottom:0;
+   height: 50px;
+   width: 100%;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-family:'Dancing Script', cursive;;
+}
+
+
+
